@@ -54,14 +54,6 @@
                                         </select>
                                         <small class="form-text text-muted">The country is not visible to other users.</small>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="subscribe">Subscribe to newsletter</label><br>
-                                        <div class="custom-control custom-checkbox-toggle custom-control-inline mr-1">
-                                            <input checked="" type="checkbox" id="subscribe" class="custom-control-input">
-                                            <label class="custom-control-label" for="subscribe">Yes</label>
-                                        </div>
-                                        <label for="subscribe" class="mb-0">Yes</label>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -139,13 +131,6 @@
                                                     <span class="fab fa-instagram"></span>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="customCheck1">Available for freelance?</label>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
-                                            <label class="custom-control-label" for="customCheck1">Yes, show me as available for freelance!</label>
                                         </div>
                                     </div>
                                 </div>
