@@ -13,7 +13,6 @@
                                         <li class="breadcrumb-item active" aria-current="page">Management</li>
                                     </ol>
                                 </nav>
-                                <h1 class="m-0">Qoutes</h1>
                             </div>
                             <a href="" class="btn btn-success ml-3">Create <i class="material-icons">add</i></a>
                         </div>

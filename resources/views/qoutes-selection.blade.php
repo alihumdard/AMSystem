@@ -16,7 +16,6 @@
                                         <li class="breadcrumb-item active" aria-current="page">Templete</li>
                                     </ol>
                                 </nav>
-                                <h1 class="m-0">Templete</h1>
                             </div>
                             <a href="#" class="btn btn-primary"><i class="material-icons">file_download</i> Download</a>
                         </div>
