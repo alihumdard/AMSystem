@@ -9,7 +9,7 @@
 
                         <!-- Navbar toggler -->
 
-                        <button class="navbar-toggler navbar-toggler-right d-block d-md-none" type="button" data-toggle="sidebar">
+                        <button class="navbar-toggler navbar-toggler-right d-block d-lg-none" type="button" data-toggle="sidebar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -17,7 +17,7 @@
                         <!-- Navbar Brand -->
                         <a href="index.html" class="navbar-brand ">
                             <img class="navbar-brand-icon" src="assets/images/stack-logo-white.svg" width="22" alt="Stack">
-                            <span>Stack</span>
+                            <span>AMS</span>
                         </a>
 
 
@@ -30,16 +30,6 @@
 
 
                         <ul class="nav navbar-nav ml-auto d-none d-md-flex">
-                            <li class="nav-item">
-                                <a href="" class="nav-link">
-                                    <i class="material-icons">help_outline</i> Get Help
-                                </a>
-                            </li>
-                            <li class="nav-item mr-3">
-                                <a href="pricing.html" class="btn btn-outline-warning">
-                                    <i class="material-icons">star</i> PRO
-                                </a>
-                            </li>
                             <li class="nav-item dropdown">
                                 <a href="#notifications_menu" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">
                                     <i class="material-icons nav-icon navbar-notifications-indicator">notifications</i>
