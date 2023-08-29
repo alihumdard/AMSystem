@@ -38,7 +38,7 @@ Route::get('/contractManage', function () {
 });
 
 Route::get('/contractSelection', function () {
-    return view('contracts-selection');
+    return view('contract-selection');
 });
 
 //users ...
