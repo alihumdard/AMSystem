@@ -25,36 +25,6 @@
     <link type="text/css" href="assets/css/vendor-fontawesome-free.css" rel="stylesheet">
     <link type="text/css" href="assets/css/vendor-fontawesome-free.rtl.css" rel="stylesheet">
 
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133433427-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-133433427-1');
-</script>
-
-
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '327167911228268');
-  fbq('track', 'PageView');
-</script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=327167911228268&ev=PageView&noscript=1" /></noscript>
-    <!-- End Facebook Pixel Code -->
-
-
-
     <!-- Flatpickr -->
     <link type="text/css" href="assets/css/vendor-flatpickr.css" rel="stylesheet">
     <link type="text/css" href="assets/css/vendor-flatpickr.rtl.css" rel="stylesheet">
@@ -63,7 +33,6 @@
 
     <!-- Vector Maps -->
     <link type="text/css" href="assets/vendor/jqvmap/jqvmap.min.css" rel="stylesheet">
-
 
 
 </head>
@@ -322,13 +291,13 @@
                             </div>
                             <div class="sidebar-heading sidebar-m-t">Menu</div>
                             <ul class="sidebar-menu">
-                                <li class="sidebar-menu-item active open">
-                                    <a class="sidebar-menu-button" data-toggle="collapse" href="#dashboards_menu">
+                                <li class="sidebar-menu-item {{ Request::is('/') ? 'active open' : '' }}">
+                                    <a class="sidebar-menu-button " data-toggle="collapse" href="#dashboards_menu">
                                         <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dvr</i>
                                         <span class="sidebar-menu-text">Dashboards</span>
                                         <span class="ml-auto sidebar-menu-toggle-icon"></span>
                                     </a>
-                                    <ul class="sidebar-submenu collapse show " id="dashboards_menu">
+                                    <ul class="sidebar-submenu collapse {{ Request::is('/') ? ' show' : '' }}  " id="dashboards_menu">
                                         <li class="sidebar-menu-item">
                                             <a class="sidebar-menu-button" href="/">
                                                 <span class="sidebar-menu-text">Quick Overveiw</span>
@@ -337,13 +306,13 @@
                                     </ul>
                                 </li>
 
-                                <li class="sidebar-menu-item">
+                                <li class="sidebar-menu-item {{ Request::is('qouteManage') || Request::is('qouteSelection') ? 'active open' : '' }}">
                                     <a class="sidebar-menu-button" data-toggle="collapse" href="#qoute_menu">
                                         <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">slideshow</i>
                                         <span class="sidebar-menu-text">Qoutes</span>
                                         <span class="ml-auto sidebar-menu-toggle-icon"></span>
                                     </a>
-                                    <ul class="sidebar-submenu collapse" id="qoute_menu">
+                                    <ul class="sidebar-submenu collapse {{ Request::is('qouteManage') || Request::is('qouteSelection') ? 'show' : '' }}" id="qoute_menu">
                                         <li class="sidebar-menu-item">
                                             <a class="sidebar-menu-button" href="/qouteManage">
                                                 <span class="sidebar-menu-text">Management</span>
@@ -357,33 +326,33 @@
                                     </ul>
                                 </li>
 
-                                <li class="sidebar-menu-item">
+                                <li class="sidebar-menu-item {{ Request::is('contractManage') || Request::is('contractSelection') ? 'active open' : '' }}">
                                     <a class="sidebar-menu-button" data-toggle="collapse" href="#contract_menu">
                                         <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">slideshow</i>
                                         <span class="sidebar-menu-text">Contracts</span>
                                         <span class="ml-auto sidebar-menu-toggle-icon"></span>
                                     </a>
-                                    <ul class="sidebar-submenu collapse" id="contract_menu">
+                                    <ul class="sidebar-submenu collapse {{ Request::is('qouteManage') || Request::is('qouteSelection') ? 'show' : '' }}" id="contract_menu">
                                         <li class="sidebar-menu-item">
                                             <a class="sidebar-menu-button" href="/contractManage">
                                                 <span class="sidebar-menu-text">Management</span>
                                             </a>
                                         </li>
                                         <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="contractSelection">
+                                            <a class="sidebar-menu-button" href="/contractSelection">
                                                 <span class="sidebar-menu-text">Selection</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
 
-                                <li class="sidebar-menu-item">
+                                <li class="sidebar-menu-item {{ Request::is('invoiceManage') || Request::is('invoiceSelection') ? 'active open' : '' }}">
                                     <a class="sidebar-menu-button" data-toggle="collapse" href="#invoice_menu">
                                         <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">slideshow</i>
                                         <span class="sidebar-menu-text">Invoices</span>
                                         <span class="ml-auto sidebar-menu-toggle-icon"></span>
                                     </a>
-                                    <ul class="sidebar-submenu collapse" id="invoice_menu">
+                                    <ul class="sidebar-submenu collapse {{ Request::is('invoiceManage') || Request::is('invoiceSelection') ? 'show' : '' }}" id="invoice_menu">
                                         <li class="sidebar-menu-item">
                                             <a class="sidebar-menu-button" href="/invoiceManage">
                                                 <span class="sidebar-menu-text">Management</span>
@@ -397,24 +366,24 @@
                                     </ul>
                                 </li>
 
-                                <li class="sidebar-menu-item">
+                                <li class="sidebar-menu-item {{ Request::is('editAccount') || Request::is('addAdmin') || Request::is('addUser') ? 'active open' : '' }}">
                                     <a class="sidebar-menu-button" data-toggle="collapse" href="#pages_menu">
                                         <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">description</i>
                                         <span class="sidebar-menu-text">Profile</span>
                                         <span class="ml-auto sidebar-menu-toggle-icon"></span>
                                     </a>
-                                    <ul class="sidebar-submenu collapse" id="pages_menu">
+                                    <ul class="sidebar-submenu collapse {{ Request::is('editAccount') || Request::is('addAdmin') || Request::is('addUser') ? 'show' : '' }}" id="pages_menu">
                                         <li class="sidebar-menu-item">
                                             <a class="sidebar-menu-button" href="/editAccount">
                                                 <span class="sidebar-menu-text">Edit Account</span>
                                             </a>
                                         </li>
-                                        <li class="sidebar-menu-item">
+                                        <li class="sidebar-menu-item {{  Request::is('addAdmin') || Request::is('addUser') ? 'active open' : '' }}">
                                             <a class="sidebar-menu-button" data-toggle="collapse" href="#signup_menu">
                                                 <span class="sidebar-menu-text">Add Users</span>
                                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
                                             </a>
-                                            <ul class="sidebar-submenu collapse" id="signup_menu">
+                                            <ul class="sidebar-submenu collapse {{  Request::is('addAdmin') || Request::is('addUser') ? 'show' : '' }}" id="signup_menu">
 
                                                 <li class="sidebar-menu-item">
                                                     <a class="sidebar-menu-button" href="/addAdmin">
@@ -449,15 +418,6 @@
     </div>
     <!-- // END header-layout -->
 
-    <!-- App Settings FAB -->
-    <div id="app-settings">
-        <app-settings layout-active="default" :layout-location="{
-      'default': 'index.html',
-      'fixed': 'fixed-dashboard.html',
-      'fluid': 'fluid-dashboard.html',
-      'mini': 'mini-dashboard.html'
-    }"></app-settings>
-    </div>
 
     <!-- jQuery -->
     <script src="assets/vendor/jquery.min.js"></script>
@@ -482,10 +442,6 @@
     <script src="assets/js/sidebar-mini.js"></script>
     <script src="assets/js/app.js"></script>
 
-    <!-- App Settings (safe to remove) -->
-    <script src="assets/js/app-settings.js"></script>
-
-
 
     <!-- Flatpickr -->
     <script src="assets/vendor/flatpickr/flatpickr.min.js"></script>
@@ -493,20 +449,6 @@
 
     <!-- Global Settings -->
     <script src="assets/js/settings.js"></script>
-
-    <!-- Chart.js -->
-    <script src="assets/vendor/Chart.min.js"></script>
-
-    <!-- App Charts JS -->
-    <script src="assets/js/charts.js"></script>
-
-    <!-- Chart Samples -->
-    <script src="assets/js/page.dashboard.js"></script>
-
-    <!-- Vector Maps -->
-    <script src="assets/vendor/jqvmap/jquery.vmap.min.js"></script>
-    <script src="assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>
-    <script src="assets/js/vector-maps.js"></script>
 
 </body>
 
