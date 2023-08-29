@@ -12,11 +12,11 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb mb-0">
                                         <li class="breadcrumb-item"><a href="#"><i class="material-icons icon-20pt">home</i></a></li>
-                                        <li class="breadcrumb-item">Pages</li>
-                                        <li class="breadcrumb-item active" aria-current="page">Invoice</li>
+                                        <li class="breadcrumb-item">Qoutes</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Templete</li>
                                     </ol>
                                 </nav>
-                                <h1 class="m-0">Invoice</h1>
+                                <h1 class="m-0">Templete</h1>
                             </div>
                             <a href="#" class="btn btn-primary"><i class="material-icons">file_download</i> Download</a>
                         </div>
