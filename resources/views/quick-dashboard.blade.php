@@ -11,7 +11,7 @@
                     <li class="breadcrumb-item active" aria-current="page">Quick Access</li>
                 </ol>
             </nav>
-            <h1 class="m-0">Quick Access</h1>
+
         </div>
         <a href="" class="btn btn-light ml-3"><i class="material-icons icon-16pt text-muted mr-1">settings</i> Settings</a>
     </div>
